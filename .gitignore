@@ -1,0 +1,49 @@
+# Terraform local directories
+.terraform/
+**/.terraform/
+
+# Terraform state files
+terraform.tfstate
+terraform.tfstate.*
+**/terraform.tfstate
+**/terraform.tfstate.*
+
+# Crash logs
+crash.log
+crash.*.log
+**/crash.log
+**/crash.*.log
+
+# Variable files (often contain secrets)
+*.tfvars
+*.tfvars.json
+**/*.tfvars
+**/*.tfvars.json
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+**/override.tf
+**/override.tf.json
+**/*_override.tf
+**/*_override.tf.json
+
+# Local configuration files
+.terraformrc
+terraform.rc
+
+# OS / Editor noise
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
+.idea/
+
+# Node/Python cache if present in submodules
+node_modules/
+**/node_modules/
+__pycache__/
+**/__pycache__/
