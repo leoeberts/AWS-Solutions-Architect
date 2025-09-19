@@ -1,29 +1,51 @@
-# AWS Solutions Architect Labs
+# AWS Solutions Architect Study Labs
 
-This repository hosts subfolders (often Git submodules) containing Terraform scripts and related assets used for AWS Solutions Architect study labs.
+Terraform-based hands-on labs for AWS Solutions Architect certification preparation. Each folder represents a specific AWS service or concept with practical implementations.
 
-## Structure
-- Each lab lives in its own folder under the repository root.
-- Prefer keeping reusable Terraform modules under a dedicated `modules/` folder or within each lab folder as needed.
+## Lab Structure
 
-## Getting Started
-1. Create a new lab folder, e.g., `lab-ec2-basics/`.
-2. Initialize Terraform inside that lab folder and manage state there.
-3. Keep sensitive values in `*.tfvars` files and never commit them (already ignored).
+### 00-utils/
+Utility scripts and reusable Terraform modules for common AWS configurations.
 
-## Submodules (optional)
-If a lab lives in another repo, add it as a submodule:
+### 01-IAM/
+Identity and Access Management labs covering users, groups, roles, policies, and permissions.
 
-```bash
-git submodule add <repo_url> <path>
-```
+### 02-EC2/
+Elastic Compute Cloud labs including instance types, security groups, key pairs, and networking.
 
-Then update submodules when needed:
+### 03-EBS/
+Elastic Block Store labs covering volume types, encryption, snapshots, and performance optimization.
 
-```bash
-git submodule update --init --recursive
-```
+### 04-AMI/
+Amazon Machine Image labs including creation, sharing, copying, and lifecycle management.
 
-## Notes
-- `.gitignore` is set up for Terraform projects to avoid committing state and secrets.
-- Use separate AWS profiles or environments per lab if helpful.
+### 05-EFS/
+Elastic File System labs covering NFS configurations, performance modes, and cross-region access.
+
+## Quick Start
+1. Navigate to any lab folder
+2. Copy `terraform.tfvars.example` to `terraform.tfvars` and configure your AWS settings
+3. Run standard Terraform workflow:
+   ```bash
+   terraform init
+   terraform plan
+   terraform apply
+   ```
+4. Clean up resources: `terraform destroy`
+
+## Prerequisites
+- AWS CLI configured with appropriate credentials
+- Terraform installed (>= 1.0)
+- Basic understanding of AWS services and Terraform syntax
+
+## Study Notes
+- Each lab builds on previous concepts
+- Start with 00-utils for foundational modules
+- Follow the numerical order for optimal learning progression
+- Test scenarios include both CLI and console operations
+
+## Security
+- Never commit AWS credentials or sensitive data
+- Use IAM roles with least privilege principle
+- All `.tfvars` files are gitignored for safety
+- Review security groups and NACLs before applying
