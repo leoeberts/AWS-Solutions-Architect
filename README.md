@@ -22,6 +22,9 @@ Amazon Machine Image labs including creation, sharing, copying, and lifecycle ma
 ### 05-EFS/
 Elastic File System labs covering NFS configurations, performance modes, and cross-region access.
 
+### 06-ALB/
+Application Load Balancer labs including target groups, listeners, health checks, and multi-AZ deployments.
+
 ## Quick Start
 1. Navigate to any lab folder
 2. Copy `terraform.tfvars.example` to `terraform.tfvars` and configure your AWS settings
