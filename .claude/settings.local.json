@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git branch:*)",
+      "Bash(git fetch:*)",
+      "Bash(FILTER_BRANCH_SQUELCH_WARNING=1 git filter-branch -f --env-filter '\nexport GIT_AUTHOR_NAME=\"\"leoeberts\"\"\nexport GIT_COMMITTER_NAME=\"\"leoeberts\"\"\nif [ \"\"$GIT_AUTHOR_DATE\"\" = \"\"2025-09-13 12:00:00 +0200\"\" ]; then\n    export GIT_AUTHOR_DATE=\"\"2024-09-13 12:00:00 +0200\"\"\n    export GIT_COMMITTER_DATE=\"\"2024-09-13 12:00:00 +0200\"\"\nelif [ \"\"$GIT_AUTHOR_DATE\"\" = \"\"2025-09-14 12:00:00 +0200\"\" ]; then\n    export GIT_AUTHOR_DATE=\"\"2024-09-14 12:00:00 +0200\"\"\n    export GIT_COMMITTER_DATE=\"\"2024-09-14 12:00:00 +0200\"\"\nelif [ \"\"$GIT_AUTHOR_DATE\"\" = \"\"2025-09-15 12:00:00 +0200\"\" ]; then\n    export GIT_AUTHOR_DATE=\"\"2024-09-15 12:00:00 +0200\"\"\n    export GIT_COMMITTER_DATE=\"\"2024-09-15 12:00:00 +0200\"\"\nelif [ \"\"$GIT_AUTHOR_DATE\"\" = \"\"2025-09-16 12:00:00 +0200\"\" ]; then\n    export GIT_AUTHOR_DATE=\"\"2024-09-16 12:00:00 +0200\"\"\n    export GIT_COMMITTER_DATE=\"\"2024-09-16 12:00:00 +0200\"\"\nelif [ \"\"$GIT_AUTHOR_DATE\"\" = \"\"2025-09-17 12:00:00 +0200\"\" ]; then\n    export GIT_AUTHOR_DATE=\"\"2024-09-17 12:00:00 +0200\"\"\n    export GIT_COMMITTER_DATE=\"\"2024-09-17 12:00:00 +0200\"\"\nelif [ \"\"$GIT_AUTHOR_DATE\"\" = \"\"2025-09-18 12:00:00 +0200\"\" ]; then\n    export GIT_AUTHOR_DATE=\"\"2024-09-18 12:00:00 +0200\"\"\n    export GIT_COMMITTER_DATE=\"\"2024-09-18 12:00:00 +0200\"\"\nelif [ \"\"$GIT_AUTHOR_DATE\"\" = \"\"2025-09-19 12:00:00 +0200\"\" ]; then\n    export GIT_AUTHOR_DATE=\"\"2024-09-19 12:00:00 +0200\"\"\n    export GIT_COMMITTER_DATE=\"\"2024-09-19 12:00:00 +0200\"\"\nfi\n' origin/main)",
+      "Bash(GIT_AUTHOR_DATE=\"2025-09-13 12:00:00\" GIT_COMMITTER_DATE=\"2025-09-13 12:00:00\" git add 00-utils/)",
+      "Bash(GIT_AUTHOR_DATE=\"2025-09-14 12:00:00\" GIT_COMMITTER_DATE=\"2025-09-14 12:00:00\" git add 01-IAM/)",
+      "Bash(GIT_AUTHOR_DATE=\"2025-09-15 12:00:00\" GIT_COMMITTER_DATE=\"2025-09-15 12:00:00\" git add 02-EC2/)",
+      "Bash(GIT_AUTHOR_DATE=\"2025-09-16 12:00:00\" GIT_COMMITTER_DATE=\"2025-09-16 12:00:00\" git add 03-EBS/)",
+      "Bash(GIT_AUTHOR_DATE=\"2025-09-17 12:00:00\" GIT_COMMITTER_DATE=\"2025-09-17 12:00:00\" git add 04-AMI/)",
+      "Bash(GIT_AUTHOR_DATE=\"2025-09-18 12:00:00\" GIT_COMMITTER_DATE=\"2025-09-18 12:00:00\" git add 05-EFS/)",
+      "Bash(GIT_AUTHOR_DATE=\"2025-09-19 12:00:00\" GIT_COMMITTER_DATE=\"2025-09-19 12:00:00\" git add README.md)",
+      "WebSearch",
+      "Bash(GIT_AUTHOR_DATE=\"2025-09-13 12:00:00\" GIT_COMMITTER_DATE=\"2025-09-13 12:00:00\" git commit -m \"Add utility modules for reusable AWS configurations\")",
+      "Bash(GIT_AUTHOR_DATE=\"2025-09-14 12:00:00\" GIT_COMMITTER_DATE=\"2025-09-14 12:00:00\" git commit -m \"Add IAM lab for users, roles, and policies\")",
+      "Bash(GIT_AUTHOR_DATE=\"2025-09-15 12:00:00\" GIT_COMMITTER_DATE=\"2025-09-15 12:00:00\" git commit -m \"Add EC2 lab with instance types and security groups\")",
+      "Bash(GIT_AUTHOR_DATE=\"2025-09-16 12:00:00\" GIT_COMMITTER_DATE=\"2025-09-16 12:00:00\" git commit -m \"Add EBS lab covering volume types and snapshots\")",
+      "Bash(GIT_AUTHOR_DATE=\"2025-09-17 12:00:00\" GIT_COMMITTER_DATE=\"2025-09-17 12:00:00\" git commit -m \"Add AMI lab for image creation and lifecycle management\")",
+      "Bash(GIT_AUTHOR_DATE=\"2025-09-18 12:00:00\" GIT_COMMITTER_DATE=\"2025-09-18 12:00:00\" git commit -m \"Add EFS lab with NFS configurations and performance modes\")",
+      "Bash(GIT_AUTHOR_DATE=\"2025-09-19 12:00:00\" GIT_COMMITTER_DATE=\"2025-09-19 12:00:00\" git commit -m \"Update README with comprehensive AWS SAA study lab structure\")",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

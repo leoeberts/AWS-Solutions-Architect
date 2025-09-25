@@ -86,7 +86,24 @@ resource "aws_lb_listener" "study_listener" {
   }
 }
 
-output "aws_lb_name" {
-  value = aws_lb.study_alb.dns_name
+resource "aws_lb_listener_rule" "demo_rule" {
+  listener_arn = aws_lb_listener.study_listener.arn
+  priority     = 100
+
+  action {
+    type = "fixed-response"
+
+    fixed_response {
+      content_type = "text/plain"
+      message_body = "Some custom error"
+      status_code  = "404"
+    }
+  }
+
+  condition {
+    path_pattern {
+      values = ["/error/*"]
+    }
+  }
 }
 
