@@ -25,6 +25,9 @@ Elastic File System labs covering NFS configurations, performance modes, and cro
 ### 06-ALB/
 Application Load Balancer labs including target groups, listeners, health checks, and multi-AZ deployments.
 
+### 07-NLB/
+Network Load Balancer labs covering layer 4 load balancing, static IP addresses, and high-performance scenarios.
+
 ## Quick Start
 1. Navigate to any lab folder
 2. Copy `terraform.tfvars.example` to `terraform.tfvars` and configure your AWS settings
